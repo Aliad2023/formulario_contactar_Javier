@@ -1,0 +1,66 @@
+/* inicio */
+
+html{
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+main{
+  display: flex;
+}
+
+.izquierda, .derecha{
+  width: 50vw;
+  height: 100vh;
+  /* Centrar los hijos directos */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Izquierda */
+.izquierda{
+  background-color: rgb(216, 213, 213);
+}
+
+.izquierda__titulo{
+  font-size: 70px;
+  font-weight: 300;
+  color:grey;
+}
+
+/* Derecha */
+.derecha{
+  background-color: rgb(252, 251, 251);
+}
+
+/* Formulario */
+form{
+  width: 60%;
+}
+
+input, textarea, button{
+  padding: 10px;
+}
+
+ul{
+  /* separar y girar todos los li */
+display: flex;
+flex-direction: column;
+gap:15px;
+}
+
+li{
+  /* Pone un li encima de otro */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Checkbox */
+/* para que el li-hijo 5 se ponga en horizontal con el checkbox */
+li:nth-child(5){
+  flex-direction: row;
+  gap: 5px;
+}
+
+
