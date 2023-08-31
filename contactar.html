@@ -57,35 +57,63 @@
 
             <section class="derecha">
                 <form action="#" class="formulario">
-                   
                     <ul>
                         <li>
                             <!-- Nombre -->
                             <label for="nombre">Nombre *</label>
-                            <input type="text" name="nombre" id="" placeholder="introduce tu nombre" required>
+                            <input 
+                            name="nombre" 
+                            type="text" 
+                            id="" 
+                            placeholder="introduce tu nombre" 
+                            required 
+                            autofocus
+                            maxlength="20"
+                            pattern="[A-Za-z]{2,20}" >
                         </li>
 
                          <li>
                              <!-- Apellidos -->
                              <label for="apellidos">Apellidos</label>
-                             <input type="text" name="apellidos" id="" placeholder="introduce tus apellidos">
+                             <input
+                             name="apellidos" 
+                             type="text" 
+                             id="" 
+                             maxlength="25"
+                             placeholder="introduce tus apellidos">
                          </li>
 
                          <li>
                              <!-- email -->
                              <label for="mail">Correo electrónico *</label>
-                             <input type="email" name="mail" id="" placeholder="introduce tu email" required>
+                             <input 
+                             name="mail" 
+                             type="email" 
+                             id="" 
+                             placeholder="introduce tu email" 
+                             required>
                          </li>
 
                          <li>
                              <!-- Comentario -->
                              <label for="comentario">Comentario *</label>
-                             <textarea name="comentario" id="" placeholder="tu vida es tan triste para escribir aquí" cols="30" rows="10"></textarea required >
+                             <textarea 
+                             name="comentario" 
+                             required
+                             id="" 
+                             placeholder="tu vida es tan triste para escribir aquí" cols="30" 
+                             rows="10"
+                             ></textarea>
                          </li>
 
                          <li>
                              <!-- Check para publicidad -->
-                                  <input type="checkbox" checked name="privacidad" id="">
+                                  <input 
+                                  name="privacidad" 
+                                  type="checkbox" 
+                                  id=""
+                                  checked 
+                                  >
                                   <span>Utilizar mi mail para  enviarme publicidad </span>
                          </li>
                          
