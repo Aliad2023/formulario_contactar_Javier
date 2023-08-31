@@ -52,10 +52,8 @@
         <!-- MAIN, zona central diferente en todos los HTML, es el contenido diferenciador de las páginas -->
         <main>
             <section class="izquierda">
-                <h4 class="izquierda__titulo">COMENTARIOS > </h4>
-            </section>
-
-            <section class="derecha">
+                <h4 class="izquierda__titulo">REGISTRARSE</h4>
+                <h5 class="izquierda__titulo">Nuevo usuario</h5>
                 <form action="#" class="formulario">
                     <ul>
                         <li>
@@ -95,16 +93,28 @@
                          </li>
 
                          <li>
-                             <!-- Comentario -->
-                             <label for="comentario">Comentario *</label>
-                             <textarea 
-                             name="comentario" 
-                             required
+                             <!-- Contraseña -->
+                             <label for="comentario">Contraseña *</label>
+                             <input 
+                             name="contrasena" 
+                             type="password" 
                              id="" 
-                             placeholder="tu vida es tan triste para escribir aquí" cols="30" 
-                             rows="10"
-                             ></textarea>
+                             placeholder="introduce una contraseña"
+                             autocomplete="off"
+                             >
                          </li>
+
+                         <li>
+                            <!-- Contraseña -->
+                            <label for="comentario">Verifica tu contraseña *</label>
+                            <input 
+                            name="contrasena" 
+                            type="password" 
+                            id="" 
+                            placeholder="repite la misma de antes"
+                            autocomplete="off"
+                            >
+                        </li>
 
                          <li>
                              <!-- Check para publicidad -->
@@ -119,6 +129,43 @@
                          
                              <!-- botones para el formulario -->
                              <button type="reset">Borrar</button>
+                             <button type="submit">Enviar</button>
+                         </li>
+                        </ul>
+                </form>
+            </section>
+
+            <section class="derecha">
+                <h4 class="derecha__titulo">INICIAR</h4>
+                <h5 class="derecha__titulo">usuario registrado</h5>
+                <form action="#" class="formulario">
+                    <ul>
+                       
+                         <li>
+                             <!-- email -->
+                             <label for="mail">Correo electrónico *</label>
+                             <input 
+                             name="mail" 
+                             type="email" 
+                             id="" 
+                             placeholder="introduce tu email" 
+                             required>
+                         </li>
+
+                         <li>
+                             <!-- Contraseña -->
+                             <label for="comentario">Contraseña *</label>
+                             <input 
+                             name="contrasena" 
+                             type="password" 
+                             id="" 
+                             placeholder="introduce una contraseña"
+                             autocomplete="off"
+                             >
+                         </li>
+
+                         <li>
+                             <!-- botones para el formulario -->
                              <button type="submit">Enviar</button>
                          </li>
                         </ul>
