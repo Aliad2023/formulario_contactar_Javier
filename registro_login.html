@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Etiquetas Meta -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Tu nombre" />
+
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="robots" content="index, follow" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+
+        <!-- Etiqueta para favicon -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+        <!-- SEO para el buscador de Google -->
+        <title>Título de tu página</title>
+        <meta name="description" content="Descripción de tu página" />
+
+        <!-- Etiquetas Open Graph y Twitter Card, para crear el SEO de Redes Sociales -->
+        <meta property="og:title" content="Título de tu página" />
+        <meta property="og:description" content="Descripción de tu página" />
+        <meta
+            property="og:image"
+            content="URL de la imagen que quieres mostrar en las redes sociales"
+        />
+        <meta property="og:url" content="URL de tu página" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Título de tu página" />
+        <meta name="twitter:description" content="Descripción de tu página" />
+        <meta
+            name="twitter:image"
+            content="URL de la imagen que quieres mostrar en Twitter"
+        />
+
+        <!-- Código de las plataformas de Análisis -->
+        <script></script>
+
+        <!-- Estilos CSS -->
+        <link rel="stylesheet" href="css/normalize.min.css" />
+        <link rel="stylesheet" href="css/estilos.css" />
+
+        <!-- Scripts a cargar antes de la renderización -->
+        <script src="preloader.js"></script>
+    </head>
+    <body>
+        <!-- HEADER, zona superior que se repite en todos los HTML -->
+        <header>
+
+        </header>
+        <!-- MAIN, zona central diferente en todos los HTML, es el contenido diferenciador de las páginas -->
+        <main>
+            <section class="izquierda">
+                <h4 class="izquierda__titulo">COMENTARIOS > </h4>
+            </section>
+
+            <section class="derecha">
+                <form action="#" class="formulario">
+                    <ul>
+                        <li>
+                            <!-- Nombre -->
+                            <label for="nombre">Nombre *</label>
+                            <input 
+                            name="nombre" 
+                            type="text" 
+                            id="" 
+                            placeholder="introduce tu nombre" 
+                            required 
+                            autofocus
+                            maxlength="20"
+                            pattern="[A-Za-z]{2,20}" >
+                        </li>
+
+                         <li>
+                             <!-- Apellidos -->
+                             <label for="apellidos">Apellidos</label>
+                             <input
+                             name="apellidos" 
+                             type="text" 
+                             id="" 
+                             maxlength="25"
+                             placeholder="introduce tus apellidos">
+                         </li>
+
+                         <li>
+                             <!-- email -->
+                             <label for="mail">Correo electrónico *</label>
+                             <input 
+                             name="mail" 
+                             type="email" 
+                             id="" 
+                             placeholder="introduce tu email" 
+                             required>
+                         </li>
+
+                         <li>
+                             <!-- Comentario -->
+                             <label for="comentario">Comentario *</label>
+                             <textarea 
+                             name="comentario" 
+                             required
+                             id="" 
+                             placeholder="tu vida es tan triste para escribir aquí" cols="30" 
+                             rows="10"
+                             ></textarea>
+                         </li>
+
+                         <li>
+                             <!-- Check para publicidad -->
+                                  <input 
+                                  name="privacidad" 
+                                  type="checkbox" 
+                                  id=""
+                                  checked 
+                                  >
+                                  <span>Utilizar mi mail para  enviarme publicidad </span>
+                         </li>
+                         
+                             <!-- botones para el formulario -->
+                             <button type="reset">Borrar</button>
+                             <button type="submit">Enviar</button>
+                         </li>
+                        </ul>
+                </form>
+
+            </section>
+        </main>
+        <!-- FOOTER, zona inferior que se repite en todos los HTML -->
+        <footer>
+
+        </footer>
+    </body>
+</html>
