@@ -10,12 +10,16 @@ main{
 }
 
 .izquierda, .derecha{
+  box-sizing: border-box;
   width: 50vw;
   height: 100vh;
+  padding: 2% 0;
   /* Centrar los hijos directos */
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  
 }
 
 /* Izquierda */
@@ -23,10 +27,19 @@ main{
   background-color: rgb(216, 213, 213);
 }
 
-.izquierda__titulo{
-  font-size: 70px;
-  font-weight: 300;
+.izquierda__titulo, .derecha__titulo{
   color:grey;
+}
+
+h4,h5{
+  margin: 0;
+  font-weight: 300;
+}
+h4{
+  font-size: 85px;
+}
+h5{
+  font-size:30px;
 }
 
 /* Derecha */
@@ -34,9 +47,14 @@ main{
   background-color: rgb(252, 251, 251);
 }
 
+.formularioDerecha{
+  flex-grow: 0.5;
+}
+
 /* Formulario */
 form{
   width: 60%;
+  margin-top:20px ;
 }
 
 input, textarea, button{
@@ -57,10 +75,6 @@ li{
 }
 
 /* Checkbox */
-/* para que el li-hijo 5 se ponga en horizontal con el checkbox */
-li:nth-child(5){
-  flex-direction: row;
-  gap: 5px;
-}
+
 
 
