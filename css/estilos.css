@@ -13,13 +13,17 @@ main{
   box-sizing: border-box;
   width: 50vw;
   height: 100vh;
-  padding: 2% 0;
+  padding: 3% 0;
   /* Centrar los hijos directos */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   
+}
+
+.izquierda:hover + .derecha{
+  filter: blur(5px) sepia(10%);
 }
 
 /* Izquierda */
@@ -74,7 +78,20 @@ li{
   flex-direction: column;
 }
 
-/* Checkbox */
+::placeholder{
+  color: rgb(185, 184, 184);
+}
 
+input, button{
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+}
+
+input:focus{
+  outline: 5px dashed blue;
+  background-color: blue;
+  color:white
+}
 
 
